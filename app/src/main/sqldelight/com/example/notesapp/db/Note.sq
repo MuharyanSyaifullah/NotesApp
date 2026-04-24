@@ -1,0 +1,51 @@
+CREATE TABLE Note (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    content TEXT NOT NULL,
+    created_at INTEGER NOT NULL,
+    updated_at INTEGER NOT NULL
+);
+
+selectAllByNewest:
+SELECT * FROM Note
+ORDER BY updated_at DESC;
+
+selectAllByOldest:
+SELECT * FROM Note
+ORDER BY updated_at ASC;
+
+selectAllByTitle:
+SELECT * FROM Note
+ORDER BY title COLLATE NOCASE ASC;
+
+selectById:
+SELECT * FROM Note
+WHERE id = ?;
+
+insertNote:
+INSERT INTO Note(title, content, created_at, updated_at)
+VALUES (?, ?, ?, ?);
+
+updateNote:
+UPDATE Note
+SET title = ?, content = ?, updated_at = ?
+WHERE id = ?;
+
+deleteNote:
+DELETE FROM Note
+WHERE id = ?;
+
+searchByNewest:
+SELECT * FROM Note
+WHERE title LIKE ? OR content LIKE ?
+ORDER BY updated_at DESC;
+
+searchByOldest:
+SELECT * FROM Note
+WHERE title LIKE ? OR content LIKE ?
+ORDER BY updated_at ASC;
+
+searchByTitle:
+SELECT * FROM Note
+WHERE title LIKE ? OR content LIKE ?
+ORDER BY title COLLATE NOCASE ASC;
