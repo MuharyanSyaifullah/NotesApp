@@ -5,7 +5,7 @@
 **Mata Kuliah:** Pengembangan Aplikasi Mobile  
 
 ## Deskripsi
-NotesApp adalah aplikasi Android sederhana yang dibuat untuk memenuhi **Tugas Praktikum Minggu 7** pada mata kuliah **Pemrograman Aplikasi Mobile**.
+NotesApp adalah aplikasi Android sederhana yang dibuat untuk memenuhi **Tugas Praktikum Minggu 7** pada mata kuliah **Pengembangan Aplikasi Mobile**.
 
 Aplikasi ini menggunakan **SQLDelight** untuk penyimpanan data notes secara lokal dan **DataStore** untuk menyimpan pengaturan aplikasi. Aplikasi dirancang dengan konsep **offline-first**, sehingga data tetap dapat diakses meskipun tidak ada koneksi internet. Tugas minggu 7 memang meminta upgrade Notes App dengan SQLDelight, CRUD, search, settings DataStore, offline-first, dan UI states yang proper.
 
