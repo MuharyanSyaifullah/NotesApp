@@ -114,22 +114,6 @@ com.example.notesapp
 4. Jalankan aplikasi pada emulator atau device Android
 5. Gunakan fitur tambah, edit, hapus, cari note, dan ubah settings
 
-## Video Demo
-
-Video demo berdurasi **45 detik** menampilkan:
-
-* CRUD operations
-* Search
-* Settings
-* Offline mode
-
-## Format Pengumpulan
-
-* Push ke GitHub repository
-* Gunakan branch: `week-7`
-* README berisi database schema dan screenshot semua screen
-* Video demo 45 detik menunjukkan CRUD, search, settings, dan offline mode 
-
 ## Tujuan Pembelajaran
 
 Project ini dibuat untuk memahami:
